@@ -1,0 +1,122 @@
+name: TVBox Parses Auto Group (Smart)
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+
+      - name: Fetch upstream
+        run: |
+          curl -L -o upstream.json \
+          https://raw.githubusercontent.com/qist/tvbox/master/dianshi.json
+
+      - name: Init stats (first run safe)
+        run: |
+          if [ ! -f parses_stats.json ]; then
+            echo '{}' > parses_stats.json
+          fi
+
+      - name: Build base parses + spider
+        run: |
+          jq --slurpfile up upstream.json '
+            .parses = (
+              $up[0].parses
+              | map(
+                  if .name == "Json聚合" and .type == 3 and .url == "Demo" then
+                    [
+                      {"name":"解析聚合","type":3,"url":"Demo"},
+                      {"name":"Json并发","type":2,"url":"Parallel"},
+                      {"name":"Json轮询","type":2,"url":"Sequence"}
+                    ]
+                  else
+                    .
+                  end
+                )
+              | flatten
+            )
+            | .spider = "https://raw.githubusercontent.com/qist/tvbox/master/jar/fan.txt;md5;3962e9dbce2c7b61a53b1b796f098d47"
+          ' aiyouteng.json > aiyouteng.tmp.json
+
+      - name: Auto group + stats learning
+        run: |
+          MAX_PARALLEL=6
+
+          FAST=()
+          SLOW=()
+
+          jq -c '.parses[]' aiyouteng.tmp.json | while read -r item; do
+            url=$(echo "$item" | jq -r '.url')
+
+            if [[ "$url" == "Demo" || "$url" == "Parallel" || "$url" == "Sequence" ]]; then
+              continue
+            fi
+
+            key=$(echo -n "$url" | md5sum | cut -d' ' -f1)
+            stat=$(jq -r ".\"$key\".ok // 0" parses_stats.json)
+            total=$(jq -r ".\"$key\".total // 0" parses_stats.json)
+
+            start=$(date +%s%3N)
+            if curl -k -L -A "Mozilla/5.0" \
+                --range 0-0 \
+                --connect-timeout 4 \
+                --max-time 6 \
+                -s "$url" >/dev/null; then
+              ok=1
+            else
+              ok=0
+            fi
+            end=$(date +%s%3N)
+            cost=$((end - start))
+
+            jq ".\"$key\".ok = ($stat + $ok) | .\"$key\".total = ($total + 1)" \
+              parses_stats.json > parses_stats.tmp && mv parses_stats.tmp parses_stats.json
+
+            if [[ $ok -eq 1 && $cost -le 3000 ]]; then
+              FAST+=("$item")
+            else
+              SLOW+=("$item")
+            fi
+          done
+
+          printf '%s\n' "${FAST[@]}" | head -n $MAX_PARALLEL > fast.json
+          printf '%s\n' "${FAST[@]:$MAX_PARALLEL}" "${SLOW[@]}" > slow.json
+
+          jq -s '.' fast.json > parallel.json
+          jq -s '.' slow.json > sequence.json
+
+      - name: Write final parses
+        run: |
+          jq --slurpfile p parallel.json --slurpfile s sequence.json '
+            .parses = (
+              [
+                {"name":"并发·主力","type":2,"url":"Parallel"},
+                {"name":"轮询·兜底","type":2,"url":"Sequence"},
+                {"name":"聚合·保底","type":3,"url":"Demo"}
+              ]
+              + $p[0] + $s[0]
+            )
+          ' aiyouteng.tmp.json > aiyouteng.json
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add aiyouteng.json parses_stats.json
+          git diff --cached --quiet || git commit -m "auto group parses with learning"
+          git push
