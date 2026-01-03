@@ -107,17 +107,18 @@
       "ext": {
         "url": "http://v.rbotv.cn"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
-      "key": "吉米",
-      "name": "吉米｜APP",
+      "key": "椰子",
+      "name": "椰子｜APP",
       "type": 3,
+      "changeable": 0,
       "api": "csp_AppFox",
       "ext": {
-        "host": "http://45.207.215.137:8006"
+        "host": "http://103.109.20.117:550"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "恋鱼",
@@ -128,41 +129,19 @@
         "host": "https://173220859-1333208043.cos.ap-shanghai.myqcloud.com/1.json",
         "ver": 2
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
-      "key": "麒麟",
-      "name": "麒麟｜APP",
+      "key": "椰子",
+      "name": "椰子｜APP",
       "type": 3,
+      "changeable": 0,
       "api": "csp_AppFox",
       "ext": {
-        "host": "https://www.70yyw.cc",
+        "host": "https://yzysap.oss-cn-hangzhou.aliyuncs.com/yzysapp.json",
         "ver": 2
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
-    },
-    {
-      "key": "木瓜",
-      "name": "木瓜｜APP",
-      "type": 3,
-      "api": "csp_AppFox",
-      "ext": {
-        "host": "http://www.yezitv.top"
-      },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
-    },
-    {
-      "key": "和友",
-      "name": "和友｜APP",
-      "type": 3,
-      "api": "csp_AppSy",
-      "ext": {
-        "site": "http://qcb.sxtzg.com/api.txt",
-        "siteKey": "rectangleadsadxa",
-        "listKey": "gHSLmx3JQRasgztO",
-        "parsesKey": "gHSLmx3JQRasgztO"
-      },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "金牌",
@@ -176,7 +155,7 @@
         "dataKey": "kecbio48dsq131ed",
         "dataIv": "kecbio48dsq131ed"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "爱盈",
@@ -192,7 +171,7 @@
         "dataIv": "sda1231sasddad21",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "顾我",
@@ -208,7 +187,7 @@
         "dataIv": "ca94b06ca3c7d80e",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "布雷",
@@ -222,7 +201,7 @@
         "dataIv": "5f2b7ed203a3a581",
         "version": "120"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "仓鼠",
@@ -236,7 +215,7 @@
         "dataIv": "7sKhdca8HXGuyZ4x",
         "version": "120"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "鲸鱼",
@@ -249,7 +228,7 @@
         "dataKey": "AAdgrdghjfgswerA",
         "dataIv": "AAdgrdghjfgswerA"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "小猪",
@@ -263,7 +242,7 @@
         "dataIv": "seb5tq9mykp2w9ry",
         "ua": "okhttp/3.10.0"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "云云",
@@ -277,7 +256,19 @@
         "dataIv": "staraugust123456",
         "version": "120"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
+    },
+    {
+      "key": "雨滴",
+      "name": "雨滴｜APP",
+      "type": 3,
+      "api": "csp_AppGet",
+      "ext": {
+        "site": "https://appto2-1316376600.cos.ap-beijing.myqcloud.com/gap.txt",
+        "dataKey": "685bf108bc47b67d",
+        "dataIv": "685bf108bc47b67d"
+      },
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "白鸽",
@@ -291,7 +282,7 @@
         "dataKey": "599D0FE5178642FD",
         "dataIv": "599D0FE5178642FD"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "奇奇",
@@ -305,21 +296,7 @@
         "dataKey": "123456789abcdefg",
         "dataIv": "123456789abcdefg"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
-    },
-    {
-      "key": "火花",
-      "name": "火花｜APP",
-      "type": 3,
-      "searchable": 1,
-      "changeable": 1,
-      "api": "csp_AppGet",
-      "ext": {
-        "site": "http://php.itcxo.cn/txt/1.txt",
-        "dataKey": "PoiUytRedFghjklm",
-        "dataIv": "PoiUytRedFghjklm"
-      },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "剧猫",
@@ -333,7 +310,7 @@
         "dataKey": "zjmznbl2026zcxgb",
         "dataIv": "zjmznbl2026zcxgb"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "剧梦",
@@ -347,7 +324,7 @@
         "dataKey": "1f0a873caf2550a5",
         "dataIv": "1f0a873caf2550a5"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "缘梦",
@@ -361,19 +338,7 @@
         "dataKey": "1234567890987654",
         "dataIv": "1234567890987654"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
-    },
-    {
-      "key": "冷心",
-      "name": "冷心｜APP",
-      "type": 3,
-      "api": "csp_AppGet",
-      "ext": {
-        "url": "https://dy.58ys.vip",
-        "dataKey": "JEWibY1AgWF0V1xx",
-        "dataIv": "JEWibY1AgWF0V1xx"
-      },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "魔方",
@@ -383,11 +348,11 @@
       "changeable": 1,
       "api": "csp_AppGet",
       "ext": {
-        "url": "https://www.mfsp4k.top",
+        "url": "https://www.26mf4k.top",
         "dataKey": "1234567887654321",
         "dataIv": "1234567887654321"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "小猫",
@@ -401,7 +366,7 @@
         "dataKey": "xmyxmyxywlkjxywl",
         "dataIv": "xmyxmyxywlkjxywl"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "瑞奇",
@@ -414,7 +379,7 @@
         "dataKey": "yangruiqiYsapp00",
         "dataIv": "yangruiqiYsapp00"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "优势",
@@ -427,7 +392,7 @@
         "dataKey": "1234567890123456",
         "dataIv": "1234567890123456"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "茉莉",
@@ -440,7 +405,7 @@
         "dataKey": "88689667dce61725",
         "dataIv": "88689667dce61725"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "数字",
@@ -453,7 +418,7 @@
         "dataKey": "VwsHxkCViDXEExWa",
         "dataIv": "VwsHxkCViDXEExWa"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "火锅",
@@ -467,7 +432,7 @@
         "dataIv": "062dec75d039980e",
         "ua": "Dart/3.5 (dart:io)"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "八天",
@@ -480,7 +445,7 @@
         "dataKey": "1111111111111111",
         "dataIv": "1111111111111111"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "紫金",
@@ -493,33 +458,7 @@
         "dataKey": "ab4e9a421675f14b",
         "dataIv": "ab4e9a421675f14b"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
-    },
-    {
-      "key": "稀饭",
-      "name": "稀饭丨APP",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "ext": {
-        "url": "https://app.xifanys.com",
-        "dataKey": "HM6Ly9yeS4ya3dvL",
-        "dataIv": "HM6Ly9yeS4ya3dvL"
-      },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
-    },
-    {
-      "key": "五八",
-      "name": "五八丨APP",
-      "type": 3,
-      "quickSearch": 1,
-      "api": "csp_AppGet",
-      "ext": {
-        "url": "https://dy.58ys.vip",
-        "dataKey": "JEWibY1AgWF0V1xx",
-        "dataIv": "JEWibY1AgWF0V1xx"
-      },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "驿站",
@@ -532,7 +471,7 @@
         "dataKey": "dyyztvapiappyyds",
         "dataIv": "dyyztvapiappyyds"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "灵虎",
@@ -546,7 +485,7 @@
         "dataIv": "#getapp@TMD@2025",
         "version": "120"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "旗星",
@@ -560,7 +499,7 @@
         "dataIv": "2SWSPFxugBLPPOKo",
         "version": "120"
       },
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "电影港",
@@ -571,7 +510,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": "./xiaosa/XYQHiker/电影港.json",
-      "jar": "./xiaosa/spider.jar;md5;7ec9147e648c4b62ba3811afbbf9b082"
+      "jar": "./xiaosa/spider.jar;md5;f04922b3f454478eb91d81eb92821064"
     },
     {
       "key": "玩偶",
