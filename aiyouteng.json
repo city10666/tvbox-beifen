@@ -26,6 +26,32 @@
       "changeable": 0
     },
     {
+      "key": "配置中心",
+      "name": "配置｜中心",
+      "type": 3,
+      "api": "csp_Config",
+      "searchable": 0,
+      "changeable": 0,
+      "indexs": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      }
+    },
+    {
+      "key": "本地",
+      "name": "本地｜视频",
+      "type": 3,
+      "api": "csp_LocalFile"
+    },
+    {
+      "key": "预告",
+      "name": "新片｜预告",
+      "type": 3,
+      "api": "csp_YGP",
+      "searchable": 0
+    },
+    {
       "key": "drpy_js_TVB云播",
       "name": "影视 | TVB云播[js]",
       "type": 3,
@@ -88,32 +114,6 @@
       "header": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0"
       }
-    },
-    {
-      "key": "配置中心",
-      "name": "配置｜中心",
-      "type": 3,
-      "api": "csp_Config",
-      "searchable": 0,
-      "changeable": 0,
-      "indexs": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.597
-      }
-    },
-    {
-      "key": "本地",
-      "name": "本地｜视频",
-      "type": 3,
-      "api": "csp_LocalFile"
-    },
-    {
-      "key": "预告",
-      "name": "新片｜预告",
-      "type": 3,
-      "api": "csp_YGP",
-      "searchable": 0
     },
     {
       "key": "热播影视",
@@ -1717,15 +1717,6 @@
       }
     },
     {
-      "key": "push_agent",
-      "name": "手机｜推送",
-      "type": 3,
-      "api": "csp_Push",
-      "searchable": 0,
-      "filterable": 0,
-      "changeable": 0
-    },
-    {
       "key": "奇优",
       "name": "影视 | ️奇优[直连]",
       "type": 3,
@@ -2262,6 +2253,15 @@
         "ratio": 1.597
       },
       "ext": "./js/网易公版影像.js"
+    },
+    {
+      "key": "push_agent",
+      "name": "手机｜推送",
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 0,
+      "filterable": 0,
+      "changeable": 0
     },
     {
       "key": "bb",
