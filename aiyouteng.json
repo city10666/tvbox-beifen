@@ -1023,7 +1023,7 @@
       "name": "巴士｜动漫",
       "type": 3,
       "api": "csp_XYQHiker",
-      "ext": "https://git.yylx.win/raw.githubusercontent.com/PizazzGY/NewTVBox/main/anime/json/bsdm.json"
+      "ext": "./json/BSDM.json"
     },
     {
       "key": "路漫漫",
