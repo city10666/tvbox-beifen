@@ -2301,7 +2301,8 @@
       "hosts": [
         "bfzy",
         "bfbfvip",
-        "bfengbf"
+        "bfengbf",
+        "baofeng"
       ],
       "regex": [
         "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"
