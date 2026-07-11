@@ -2309,7 +2309,8 @@
         "bfzy",
         "bfbfvip",
         "bfengbf",
-        "baofeng"
+        "baofeng",
+        "fengbao"
       ],
       "regex": [
         "#EXTINF.*?\\s+.*?adjump.*?\\.ts\\s+"
