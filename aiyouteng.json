@@ -114,6 +114,26 @@
       "changeable": 1
     },
     {
+      "key": "OleLive",
+      "name": "欧乐影院 • 外",
+      "type": 3,
+      "api": "./py/OleLive.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "Didahd",
+      "name": "嘀嗒影视",
+      "type": 3,
+      "api": "./py/Didahd.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "changeable": 1
+    },
+    {
       "key": "TVB云播",
       "name": "TVB云播",
       "type": 3,
@@ -1904,6 +1924,16 @@
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
+      "changeable": 1
+    },
+    {
+      "key": "Ncat",
+      "name": "网飞猫 • 外",
+      "type": 3,
+      "api": "./py/Ncat.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
       "changeable": 1
     },
     {
